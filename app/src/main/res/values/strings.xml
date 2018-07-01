@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BusinessCard</string>
+    <string name="titleValue">Restaurant Yukihira</string>
+    <string name="description">A Japanese style special-of-the-day type restaurant owned by Joichiro Yukihira in the Sumiredori Shopping District.</string>
+    <string name="addressSectionHeader">Address:</string>
+    <string name="contactSectionHeader">Contact:</string>
+    <string name="operatingHourSectionHeader">Hours:</string>
+    <string name="addressValue">14 Sumiredori Shopping District, Sumire Town, Japan 160&#8211;1200</string>
+    <string name="contactValue">81&#8211;20&#8211;1234&#8211;5678</string>
+    <string name="operatingHourValue">10:00am &#8211; 10:00pm</string>
+
+</resources>

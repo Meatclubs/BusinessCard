@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/restaurant_yukihira"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="@string/titleValue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/description"
+            android:text="@string/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:rating="5.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:backgroundTint="@color/colorRatingBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description"/>
+
+        <TextView
+            android:id="@+id/addressHeader"
+            android:text="@string/addressSectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"/>
+
+        <TextView
+            android:id="@+id/addressBody"
+            android:text="@string/addressValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintStart_toEndOf="@+id/addressHeader"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/hourHeader"
+            android:text="@string/operatingHourSectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/addressBody"/>
+
+        <TextView
+            android:id="@+id/hourBody"
+            android:text="@string/operatingHourValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/addressBody"
+            app:layout_constraintStart_toStartOf="@+id/addressBody"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/contactHeader"
+            android:text="@string/contactSectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/hourHeader" />
+
+        <TextView
+            android:id="@+id/contactBody"
+            android:text="@string/contactValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/hourBody"
+            app:layout_constraintStart_toStartOf="@+id/addressBody"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
